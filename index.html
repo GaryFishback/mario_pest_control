@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mario Pest Control</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Hello World</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body background="http://getwallpapers.com/wallpaper/full/0/5/e/951553-mario-backgrounds-1920x1080-mobile.jpg">
+
+    <header>
+      <h1>Mario Pest Control</h1>
+    </header>
+    <main>
+      <form name="baddieCalc" class="container">
+        <ul class="horizontal">
+          <div>
+            <li class="test1">
+              <img
+                src="https://img00.deviantart.net/3b73/i/2017/043/f/6/goomba_by_lisuplaygames-dayuyn3.png
+
+                "
+                alt="Goomba"
+                class="baddieimg responsive"
+              />
+              <br />
+              <input
+                type="number"
+                name="goombas"
+                placeholder="Goombas: 5 Coins/ea"
+              />
+            </li>
+            <li class="test2">
+              <img
+                src="https://vignette4.wikia.nocookie.net/thedimensionsaga/images/0/06/Bob-omb.png/revision/latest?cb=20130729181256"
+                alt="bobombs"
+                class="baddieimg responsive"
+              />
+
+              <br />
+              <input
+                type="number"
+                name="bobombs"
+                placeholder="Bob-ombs: 7 Coins/ea"
+              />
+            </li>
+            <li class="test3">
+              <img
+                src="https://www.mariowiki.com/images/thumb/6/63/CheepCheepNSMBU.png/1200px-CheepCheepNSMBU.png"
+                alt="Cheep-cheeps"
+                class="baddieimg responsive"
+              />
+              <br />
+              <input
+                type="number"
+                name="cheepCheeps"
+                placeholder="Cheep-Cheeps 11 Coins/ea"
+              />
+            </li>
+          </div>
+        </ul>
+        <button>Submit</button>
+      </form>
+      <div class="totalcenter">
+        <p class="border" style="font-size: 30px;"><strong>GOOMBAS CAPTURED:</strong> <span id="goombaTotal"></span></p>
+        <p class="border" style="font-size: 30px;"><size="16"><strong> BOB-OMBS CAPTURED:<span id="bobombTotal"></strong></span></p class="border">
+        <p class="border"  style="font-size: 30px;"><strong>CHEEP-CHEEPS CAPTURED: </strong><span id="cheepCheepTotal"></span></p class="border">
+        <p class="border" style="font-size: 30px;"><strong>TOTAL-EARNED: </strong><span id="total"></span></p class="border">
+      </div>
+    </main>
+    <footer class="foot">
+      <hr class="full" />
+      <p>E-mail: JumpMan81@yahoo.com</p>
+      <p>Visit us at: mariomario.com</p>
+      <p>Address: Lorem</p>
+    </footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
