@@ -1,5 +1,9 @@
+body {
+    color: black;
+}
+
 header {
-    border-bottom: black 1px solid;;
+  border-bottom: black 1px solid;
 }
 
 h1 {
@@ -10,43 +14,68 @@ h1 {
 .baddieimg {
   width: 150px;
 }
+li {
+    padding: 16px;
+    margin: 15px;
+    list-style-type: none;
+}
+footer {
+  margin-top: 15%;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  height: 150px;
+}
 /* mobile */
 @media screen and (max-width: 414px) {
-.container {
+  .container {
     display: flex;
     flex-direction: column;
-
-}
-.container li img{
+  }
+  .container li img {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-}
-input {
+  }
+  input {
     height: 50px;
-    width: 85%
-}
-.responsive {
+    width: 85%;
+  }
+  .responsive {
     width: 50%;
     height: auto;
     padding: 15% 22%;
-}
+  }
 
-button {
+  button {
     height: 50px;
     width: 100%;
-}
-.totalcenter {
+  }
+  .totalcenter {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.full {
-    width: 100%
-}
+  }
+  .full {
+    width: 100%;
+  }
 }
 /*end of media query*/
 /* Desktop */
-li {
+@media screen and (min-width: 415px) {
+  li {
+    float: left;
+    padding: 16px;
+    margin: 15px;
     list-style-type: none;
   }
+  footer {
+    margin-top: 15%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 150px;
+    position: fixed;
+  }
+}
